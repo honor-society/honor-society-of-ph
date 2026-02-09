@@ -21,6 +21,25 @@
     section h2 { color:#7a0019; }
     .values { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.5rem; margin-top:2rem; }
     .card { background:#fff; padding:1.5rem; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.08); }
+    /* Member cards with images */
+.member-card {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.member-photo {
+  width: 100%;
+  height: 220px;              /* controls visual consistency */
+  object-fit: cover;          /* fills frame without distortion */
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  background: #eee;           /* graceful fallback while loading */
+}
+
+.member-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+}
     footer { background:#222; color:#ddd; text-align:center; padding:2rem; font-size:.9rem; }
   </style>
 </head>
